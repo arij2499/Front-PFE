@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/accordion.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body class="crm_body_bg">
+
+
+ <!-- sidebar  -->
+
+ <nav class="sidebar dark_sidebar">
+    <div class="logo d-flex justify-content-between">
+        <a class="large_logo" href="index-2.html"><img src="assets/img/logo.png" alt=""></a>
+        <a class="small_logo" href="index-2.html"><img src="assets/img/mini_logo.png" alt=""></a>
+        <div class="sidebar_close_icon d-lg-none">
+            <i class="ti-close"></i>
+        </div>
+    </div>
+    <ul id="sidebar_menu">
+
+      <!--   <li class="">
+            <a   class="has-arrow" href="#" aria-expanded="false">
+              <div class="nav_icon_small">
+                    <img src="assets/img/menu-icon/dashboard.svg" alt="">
+                </div>
+            <div class="nav_title">
+                <span>Projets</span>
+            </div>
+            </a>
+            <ul>
+              <li><a routerLink="/add-projet">Ajouter</a></li>
+              <li><a routerLink="/projets">Lister</a></li>
+            </ul>
+        </li> -->
+
+        <li class="">
+            <a   class="has-arrow" href="#" aria-expanded="false">
+              <div class="nav_icon_small">
+                <img src="assets/img/menu-icon/5.svg" alt="">
+            </div>
+            <div class="nav_title">
+                <span>Utilisateurs</span>
+            </div>
+            </a>
+            <ul>
+              <li><a routerLink="/users">Lister</a></li>
+
+            </ul>
+
+</li>
+
+
+      <li class="">
+        <a   class="has-arrow" href="#" aria-expanded="false">
+          <div class="nav_icon_small">
+            <img src="assets/img/menu-icon/11.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Role & Permissions</span>
+        </div>
+        </a>
+        <ul>
+          <li><a href="#">Lister</a></li>
+
+        </ul>
+    </li>
+
+
+  <li class="">
+    <a   class="has-arrow" href="#" aria-expanded="false">
+      <div class="nav_icon_small">
+            <img src="assets/img/menu-icon/dashboard.svg" alt="">
+        </div>
+    <div class="nav_title">
+        <span>Profils</span>
+    </div>
+    </a>
+    <ul>
+      <li><a routerLink="/profils">Lister</a></li>
+    </ul>
+</li>
+
+<li class="">
+  <a   class="has-arrow" href="#" aria-expanded="false">
+    <div class="nav_icon_small">
+          <img src="assets/img/menu-icon/dashboard.svg" alt="">
+      </div>
+  <div class="nav_title">
+      <span>Fonctions</span>
+  </div>
+  </a>
+  <ul>
+    <li><a routerLink="/fonctions">Lister</a></li>
+  </ul>
+</li>
+      </ul>
+</nav>
+<!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+      <!-- menu  -->
+      <app-menu-compoenent></app-menu-compoenent>
+  <!--/ menu  -->
+    <div class="main_content_iner ">
+        <div class="container-fluid p-0 sm_padding_15px">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="dashboard_header mb_50">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="dashboard_header_title">
+                                  <h3> Gérer les droits d'accès</h3>
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="dashboard_breadcam text-right">
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="col-lg-6">
+                    <div class="card_box box_shadow position-relative mb_30">
+                        <div class="white_box_tittle ">
+                            <div class="main-title2 ">
+                                <h4 class="mb-2 nowrap">Liste de profils</h4>
+                                <div class="QA_table mb_30">
+                                  <!-- table-responsive -->
+                                  <table class="table lms_table_active ">
+                                      <thead>
+                                          <tr>
+
+                                              <th scope="col">ID profil</th>
+
+                                             <th scope="col">Nom profil</th>
+
+
+                                          </tr>
+                                      </thead>
+                                      <tbody *ngFor ="let profil of profils" >
+                                        <tr *ngIf="userConnect.profil.idProfil == profil.idProfil">
+                                          <td>{{profil.idProfil}}</td>
+                                          <td>{{profil.nomProfil}}</td>
+                                          <td> </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card_box box_shadow position-relative mb_30">
+                        <div class="white_box_tittle ">
+                            <div class="main-title2 ">
+                                <h4 class="mb-2 nowrap">Liste de fonctions</h4>
+                                <div class="QA_table mb_30">
+                                  <!-- table-responsive -->
+                                  <table class="table lms_table_active ">
+                                      <thead>
+                                          <tr>
+
+                                              <th scope="col">ID fonction</th>
+
+                                             <th scope="col">Nom fonction</th>
+
+
+                                          </tr>
+                                      </thead>
+                                      <tbody *ngFor ="let fonction of fonctions">
+
+                                        <tr *ngIf="userConnect.profil.fonctions[0].id_fonction == fonction.id_fonction">
+                                          <td>{{fonction.id_fonction}}</td>
+                                          <td>{{fonction.nom_fonction}}</td>
+
+                                          <td> </td>
+        </tr>
+
+                                      </tbody>
+                                  </table>
+                              </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="main_content_iner overly_inner ">
+                    <div class="card_box box_shadow position-relative mb_30">
+                        <div class="white_box_tittle ">
+                            <div class="main-title2 ">
+                                <h4 class="mb-2 nowrap">Roles et permissions</h4>
+
+                                <div class="QA_table mb_30">
+                                  <!-- table-responsive -->
+
+                                  <table class="table lms_table_active ">
+                                    <thead>
+                                        <tr>
+
+                                            <th scope="col">Profil</th>
+
+                                           <th scope="col">Fonctions</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody *ngFor ="let profil of profils" >
+                                      <tr *ngIf="userConnect.profil.idProfil == profil.idProfil">
+
+                                        <td>{{profil.nomProfil}}</td>
+                                        <td>{{profil.fonctions[0].nom_fonction}}</td>
+                                        <td> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+<!-- footer part -->
+<app-footer-compoenent></app-footer-compoenent>
+</section>
+<!-- main content part end -->
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+<app-chats-component></app-chats-component>
+
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/accordion.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:00 GMT -->
+</html>

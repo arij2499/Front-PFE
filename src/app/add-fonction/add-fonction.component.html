@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/add_new_user.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:46:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body class="crm_body_bg">
+
+
+
+<!-- main content part here -->
+
+ <!-- sidebar  -->
+ <nav class="sidebar dark_sidebar">
+  <div class="logo d-flex justify-content-between">
+      <a class="large_logo" href="index-2.html"><img src="assets/img/logo.png" alt=""></a>
+      <a class="small_logo" href="index-2.html"><img src="assets/img/mini_logo.png" alt=""></a>
+      <div class="sidebar_close_icon d-lg-none">
+          <i class="ti-close"></i>
+      </div>
+  </div>
+  <ul id="sidebar_menu">
+
+    <!--   <li class="">
+          <a   class="has-arrow" href="#" aria-expanded="false">
+            <div class="nav_icon_small">
+                  <img src="assets/img/menu-icon/dashboard.svg" alt="">
+              </div>
+          <div class="nav_title">
+              <span>Projets</span>
+          </div>
+          </a>
+          <ul>
+            <li><a routerLink="/add-projet">Ajouter</a></li>
+            <li><a routerLink="/projets">Lister</a></li>
+          </ul>
+      </li> -->
+
+      <li class="">
+          <a   class="has-arrow" href="#" aria-expanded="false">
+            <div class="nav_icon_small">
+              <img src="assets/img/menu-icon/5.svg" alt="">
+          </div>
+          <div class="nav_title">
+              <span>Utilisateurs</span>
+          </div>
+          </a>
+          <ul>
+            <li><a routerLink="/users">Lister</a></li>
+
+          </ul>
+
+</li>
+
+
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+          <img src="assets/img/menu-icon/11.svg" alt="">
+      </div>
+      <div class="nav_title">
+          <span>Role & Permissions</span>
+      </div>
+      </a>
+      <ul>
+        <li><a routerLink="/droits">Lister</a></li>
+
+      </ul>
+  </li>
+
+
+<li class="">
+  <a   class="has-arrow" href="#" aria-expanded="false">
+    <div class="nav_icon_small">
+          <img src="assets/img/menu-icon/dashboard.svg" alt="">
+      </div>
+  <div class="nav_title">
+      <span>Profils</span>
+  </div>
+  </a>
+  <ul>
+    <li><a routerLink="/profils">Lister</a></li>
+  </ul>
+</li>
+
+<li class="">
+<a   class="has-arrow" href="#" aria-expanded="false">
+  <div class="nav_icon_small">
+        <img src="assets/img/menu-icon/dashboard.svg" alt="">
+    </div>
+<div class="nav_title">
+    <span>Fonctions</span>
+</div>
+</a>
+<ul>
+  <li><a routerLink="/fonctions" >Lister</a></li>
+</ul>
+</li>
+    </ul>
+</nav>
+ <!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+        <!-- menu  -->
+        <app-menu-compoenent></app-menu-compoenent>
+    <!--/ menu  -->
+    <div class="main_content_iner overly_inner ">
+        <div class="container-fluid p-0 ">
+            <!-- page title  -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="white_card card_height_100 mb_30">
+                        <div class="white_card_header">
+                            <div class="box_header m-0">
+                                <div class="main-title">
+                                  <a class="action_btn mr_10" routerLink="/fonctions">
+                                    <i class="ti-back-left"></i></a>
+                                    <h3 class="m-0">Ajouter une nouvelle fonction</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_card_body">
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="common_input mb_15">
+                                        <input type="text" placeholder="Fonction" [(ngModel)]= "newFonction.nom_fonction" name="nomProfil" class="form-control">
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                               <!--  <div class="col-lg-6">
+                                    <select class="nice_Select2 nice_Select_line wide" style="display: none;">
+                                        <option value="1">Select Role</option>
+                                        <option value="1">Role 1</option>
+                                        <option value="1">Role2</option>
+                                    </select>
+                                </div> -->
+                                <div class="col-12">
+                                  <div class="create_report_btn mt_30">
+                                      <a class="btn_1 radius_btn d-block text-center" (click)="addFonction()" >Ajouter</a>
+                                  </div>
+                              </div>
+                               <!--  <div class="col-12">
+                                  <div class="mt-2">
+                                    <button type="submit"  (click)="addProfil()" class="btn btn-success">Ajouter</button>
+                                  </div> -->
+                                <!--     <div class="create_report_btn mt_30">
+                                        <a href="#" class="btn_1 radius_btn d-block text-center">Ajouter utilisateur</a>
+                                    </div>
+                                </div> -->
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!-- footer part -->
+<app-footer-compoenent></app-footer-compoenent>
+</section>
+<!-- main content part end -->
+
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+<app-chats-component></app-chats-component>
+
+<!-- footer  -->
+
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/add_new_user.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:46:54 GMT -->
+</html>
+

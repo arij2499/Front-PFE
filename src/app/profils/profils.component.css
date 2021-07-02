@@ -1,0 +1,12 @@
+.collapse {
+  border-collapse: collapse;
+}
+.separate {
+  border-collapse: separate;
+}
+table {
+  display: inline-table;
+ /*  margin: 1em;
+  border: dashed 3px;
+  border-width: 6px; */
+}

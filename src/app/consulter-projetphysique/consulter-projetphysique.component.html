@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/accordion.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body class="crm_body_bg">
+
+
+ <!-- sidebar  -->
+
+ <nav class="sidebar dark_sidebar">
+  <div class="logo d-flex justify-content-between">
+    <div>
+      <div class="bg-warning p-20 m-b-10 text-center" >
+        Ministére de l'enseignement supérieur de la recherche scientifique et de la technologie
+      </div>
+    </div>
+      <div class="sidebar_close_icon d-lg-none">
+          <i class="ti-close"></i>
+      </div>
+  </div>
+  <ul id="sidebar_menu">
+
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+            <img src="assets/img/menu-icon/21.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Suivi Physique</span>
+        </div>
+      </a>
+     <ul>
+       <li><a routerLink="/Rtechnique">Consulter</a></li>
+        <!--  <li><a routerLink="/ajustement">Ajustement</a></li>
+        <li><a routerLink="/realisation">Réalisation</a></li> -->
+      </ul>
+    </li>
+
+
+
+    </ul>
+</nav>
+<!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+      <!-- menu  -->
+      <app-menu-compoenent></app-menu-compoenent>
+  <!--/ menu  -->
+
+    <div class="main_content_iner ">
+      <div class="container-fluid p-0 sm_padding_15px">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+              <div class="white_card card_height_100 mb_30">
+                  <div class="white_card_header">
+                      <div class="box_header m-0">
+                          <div class="main-title">
+                              <h3 class="m-0">Plannification physique</h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="white_card_body">
+
+                    <div class="QA_table mb_30">
+
+                      <table class="table lms_table_active ">
+                          <thead>
+                              <tr>
+
+
+
+                                 <th scope="col">Année</th>
+                                 <th scope="col">Avancement</th>
+                                 <a class="action_btn mr_10" routerLink="/plantravail-financier"> <i class="fad ti-plus"></i> </a>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+
+
+                                   <td><input type="text"[ngModel]= "currentProjet.plp[2].annee_PL" name="plp_an"
+                                    class="form-control" >
+                                    <input type="text"[ngModel]= "currentProjet.plp[1].annee_PL" name="plp_an"
+                                    class="form-control" >
+                                    <input type="text"[ngModel]= "currentProjet.plp[1].annee_PL" name="plp_an"
+                                    class="form-control" >
+                                  </td>
+
+                                  <td><input type="text"[ngModel]= "currentProjet.plp[0].avancement_PL" name="plp_avn"
+                                    class="form-control" >
+                                    <input type="text"[ngModel]= "currentProjet.plp[2].avancement_PL" name="plp_avn"
+                                    class="form-control" >
+                                    <input type="text"[ngModel]= "currentProjet.plp[1].avancement_PL" name="plp_avn"
+                                    class="form-control" >
+                                  </td>
+                              <td>
+                                <div class="action_btns d-flex">
+
+                                  <a class="action_btn mr_10" routerLink="/update-pif"> <i class="far fa-edit"></i> </a>
+                                  <a class="action_btn mr_10"> <i class="fas fa-trash"></i> </a>
+                                </div>
+                                </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="white_card card_height_100 mb_30">
+                  <div class="white_card_header">
+                      <div class="box_header m-0">
+                          <div class="main-title">
+                              <h3 class="m-0">Ajustement physique</h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="white_card_body">
+
+                    <div class="QA_table mb_30">
+
+                      <table class="table lms_table_active ">
+                          <thead>
+                              <tr>
+
+                                  <th scope="col">Année</th>
+
+                                 <th scope="col">Avancement</th>
+
+                                 <a class="action_btn mr_10" routerLink="/plantravail-financier"> <i class="fad ti-plus"></i> </a>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+
+
+                                <td><input type="text"[ngModel]= "currentProjet.ajp[2].annee_Aj" name="aj_annee"
+                                    class="form-control" >
+                                    <input type="text"[ngModel]= "currentProjet.ajp[0].annee_Aj" name="aj_annee"
+                                    class="form-control" >
+                                    <input type="text"[ngModel]= "currentProjet.ajp[1].annee_Aj" name="aj_annee"
+                                    class="form-control" >
+                                  </td>
+
+                                  <td><input type="text"[ngModel]= "currentProjet.ajp[2].avancement_Aj" name="aj_avn"
+                                    class="form-control" >
+                                    <input type="text"[ngModel]= "currentProjet.ajp[1].avancement_Aj" name="aj_avn"
+                                    class="form-control" >
+                                    <input type="text"[ngModel]= "currentProjet.ajp[0].avancement_Aj" name="aj_avn"
+                                    class="form-control" >
+                                  </td>
+                              <td>
+                                <div class="action_btns d-flex">
+
+                                  <a class="action_btn mr_10" routerLink="/update-ptf"> <i class="far fa-edit"></i> </a>
+                                  <a class="action_btn mr_10"> <i class="fas fa-trash"></i> </a>
+                                </div>
+                                </td>
+
+
+                              </tr>
+
+                          </tbody >
+                      </table>
+                  </div>
+
+
+          </div>
+          </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="white_card card_height_100 mb_30">
+                <div class="white_card_header">
+                    <div class="box_header m-0">
+                        <div class="main-title">
+                            <h3 class="m-0">Réalisation physique</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="white_card_body">
+
+                  <div class="QA_table mb_30">
+
+                    <table class="table lms_table_active ">
+                        <thead>
+                            <tr>
+                              <th scope="col">Année</th>
+
+                              <th scope="col">Avancement</th>
+                              <a class="action_btn mr_10" routerLink="/plantravail-financier"> <i class="fad ti-plus"></i> </a>
+
+
+                            </tr>
+                        </thead>
+                        <tbody >
+                          <tr>
+                            <td><input type="text"[ngModel]= "currentProjet.rap[0].annee_RE" name="rap_an"
+                              class="form-control" >
+                              <input type="text"[ngModel]= "currentProjet.rap[2].annee_RE" name="rap_an"
+                              class="form-control" >
+                              <input type="text"[ngModel]= "currentProjet.rap[1].annee_RE" name="rap_an"
+                              class="form-control" >
+
+                            </td>
+
+                            <td><input type="text"[ngModel]= "currentProjet.rap[0].avancement_RE" name="rap_avn"
+                              class="form-control" >
+                              <input type="text"[ngModel]= "currentProjet.rap[2].avancement_RE" name="rap_avn"
+                              class="form-control" >
+                              <input type="text"[ngModel]= "currentProjet.rap[1].avancement_RE" name="rap_avn"
+                              class="form-control" >
+
+                            </td>
+
+
+
+<td></td>
+
+
+
+<td>
+<div class="action_btns d-flex">
+
+<a class="action_btn mr_10" [routerLink]="['/updateFacture',facture.facture_id]"> <i class="far fa-edit"></i> </a>
+<a class="action_btn mr_10" (click)="supprimerFacture(facture)"> <i class="fas fa-trash"></i> </a>
+</div>
+</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+        </div>
+        </div>
+        </div>
+
+
+      </div>
+
+      </div>
+  </div>
+<!-- footer part -->
+<app-footer-compoenent></app-footer-compoenent>
+</section>
+<!-- main content part end -->
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+<app-chats-component></app-chats-component>
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/accordion.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:00 GMT -->
+</html>
+

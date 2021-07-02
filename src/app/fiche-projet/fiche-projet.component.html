@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/bootstrap_table.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body class="crm_body_bg">
+
+
+ <!-- sidebar  -->
+ <nav class="sidebar">
+  <div class="logo d-flex justify-content-between">
+      <a class="large_logo" href="index-2.html"><img src="assets/img/logo.jpg" alt=""></a>
+      <a class="small_logo" href="index-2.html"><img src="assets/img/mini_logo.png" alt=""></a>
+      <div class="sidebar_close_icon d-lg-none">
+          <i class="ti-close"></i>
+      </div>
+  </div>
+  <ul id="sidebar_menu">
+
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+            <img src="assets/img/menu-icon/21.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Dashboard</span>
+        </div>
+      </a>
+     <ul>
+       <li><a routerLink="/dashboard">Consulter</a></li>
+        <!--  <li><a routerLink="/ajustement">Ajustement</a></li>
+        <li><a routerLink="/realisation">Réalisation</a></li> -->
+      </ul>
+    </li>
+
+
+      <li class="">
+          <a   class="has-arrow" href="#" aria-expanded="false">
+            <div class="nav_icon_small">
+                  <img src="assets/img/menu-icon/dashboard.svg" alt="">
+              </div>
+          <div class="nav_title">
+              <span>Projets</span>
+          </div>
+          </a>
+          <ul>
+
+            <li><a>Lister</a></li>
+          </ul>
+      </li>
+
+
+
+
+  <li class="">
+    <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+          <img src="assets/img/menu-icon/18.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Gestion ressources</span>
+        </div>
+    </a>
+  <ul>
+       <li><a routerLink="/ressources">Gérer</a></li>
+        <!--  <li><a href="#">Plannification de travail Financier</a></li>
+        <li><a href="#">Factures</a></li> -->
+
+    </ul>
+  </li>
+
+
+    </ul>
+</nav>
+ <!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+        <!-- menu  -->
+        <app-menu-compoenent></app-menu-compoenent>
+    <!--/ menu  -->
+  <div class="main_content_iner ">
+      <div class="container-fluid p-0">
+            <div class="row justify-content-center">
+
+
+
+
+                           <div class="col-lg-6">
+                <div class="white_card card_height_100 mb_30">
+                    <div class="white_card_header">
+                        <div class="box_header m-0">
+                            <div class="main-title">
+                                <h3 class="m-0">Fiche projet</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white_card_body">
+
+
+                      <div class="table-responsive m-b-30">
+                          <table class="table table-borderless">
+                              <thead>
+                                  <tr>
+                                      <th scope="col"></th>
+                                      <td scope="col">Réference projet:</td>
+                                      <th scope="col"> <input type="text" placeholder="Nom de projet" [(ngModel)]= " currentProjet.intitule" name="intitule" class="form-control"></th>
+                                      <th scope="col"></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <th scope="row"></th>
+                                      <td>Intitulé:</td>
+                                      <td></td>
+                                      <td></td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row"></th>
+                                      <td>Date de début:</td>
+                                      <td></td>
+                                      <td></td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row"></th>
+                                      <td>Date de fin:</td>
+                                      <td></td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row"></th>
+                                    <td>Stade:</td>
+                                    <td></td>
+                                </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <a class="action_btn mr_10" > <i class="fad ti-bar-chart-alt"></i> </a>
+                    </div>
+                </div>
+              </div>
+
+
+        </div>
+    </div>
+  </div>
+
+<!-- footer part -->
+<app-footer-compoenent></app-footer-compoenent>
+</section>
+<!-- main content part end -->
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+
+<app-chats-component></app-chats-component>
+
+
+
+
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/bootstrap_table.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:01 GMT -->
+</html>
+

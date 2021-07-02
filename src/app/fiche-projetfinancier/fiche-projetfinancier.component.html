@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/accordion.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body class="crm_body_bg">
+
+
+ <!-- sidebar  -->
+
+ <nav class="sidebar">
+  <div class="logo d-flex justify-content-between">
+      <a class="large_logo" href="index-2.html"><img src="assets/img/logo.jpg" alt=""></a>
+      <a class="small_logo" href="index-2.html"><img src="assets/img/mini_logo.png" alt=""></a>
+      <div class="sidebar_close_icon d-lg-none">
+          <i class="ti-close"></i>
+      </div>
+  </div>
+  <ul id="sidebar_menu">
+
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+          <img src="assets/img/menu-icon/15.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Suivi financier</span>
+        </div>
+      </a>
+     <ul>
+       <li><a >Consulter</a></li>
+
+      </ul>
+    </li>
+
+
+
+    </ul>
+</nav>
+<!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+      <!-- menu  -->
+      <app-menu-compoenent></app-menu-compoenent>
+  <!--/ menu  -->
+    <div class="main_content_iner ">
+        <div class="container-fluid p-0 sm_padding_15px">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="dashboard_header mb_50">
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="dashboard_header_title">
+                                  <h3> Suivi de financement </h3>
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="dashboard_breadcam text-right">
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="col-lg-6">
+                    <div class="card_box box_shadow position-relative mb_30">
+                        <div class="white_box_tittle ">
+                            <div class="main-title2 ">
+                                <h4 class="mb-2 nowrap">Plan initial financier</h4>
+                                <div class="QA_table mb_30">
+                                  <!-- table-responsive -->
+                                  <table class="table lms_table_active ">
+                                      <thead>
+                                          <tr>
+
+                                              <th scope="col">Année</th>
+
+                                             <th scope="col">Engagement</th>
+                                             <th scope="col">Paiement</th>
+                                             <a class="action_btn mr_10" routerLink="/plainit-financier"> <i class="fad ti-plus"></i> </a>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td></td>
+                                          <td></td>
+                                          <td> </td>
+                                          <td>
+                                            <div class="action_btns d-flex">
+
+                                              <a class="action_btn mr_10" routerLink="/update-pif"> <i class="far fa-edit"></i> </a>
+                                              <a class="action_btn mr_10"> <i class="fas fa-trash"></i> </a>
+                                            </div>
+                                            </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card_box box_shadow position-relative mb_30">
+                        <div class="white_box_tittle ">
+                            <div class="main-title2 ">
+                                <h4 class="mb-2 nowrap">Plan de travail financier</h4>
+                                <div class="QA_table mb_30">
+                                  <!-- table-responsive -->
+                                  <table class="table lms_table_active ">
+                                      <thead>
+                                          <tr>
+
+                                              <th scope="col">Année</th>
+
+                                             <th scope="col">Engagement</th>
+                                             <th scope="col">Paiement</th>
+                                             <a class="action_btn mr_10" routerLink="/plantravail-financier"> <i class="fad ti-plus"></i> </a>
+                                          </tr>
+                                      </thead >
+                                      <tbody>
+                                        <tr>
+                                          <td></td>
+                                          <td></td>
+
+                                          <td></td>
+
+                                          <td>
+                                            <div class="action_btns d-flex">
+
+                                              <a class="action_btn mr_10" routerLink="/update-ptf"> <i class="far fa-edit"></i> </a>
+                                              <a class="action_btn mr_10"> <i class="fas fa-trash"></i> </a>
+                                            </div>
+                                            </td>
+
+
+                                          </tr>
+
+                                      </tbody >
+                                  </table>
+                              </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card_box box_shadow position-relative mb_30">
+                      <div class="white_box_tittle ">
+                          <div class="main-title2 ">
+                              <h4 class="mb-2 nowrap">Liste de factures</h4>
+
+                              <div class="QA_table mb_30">
+                                <!-- table-responsive -->
+                                <table class="table lms_table_active ">
+                                    <thead>
+                                        <tr>
+                                          <th scope="col">N facture</th>
+                                            <th scope="col">Nom</th>
+                                            <a class="action_btn mr_10" routerLink="/add-facture"> <i class="fad ti-plus"></i> </a>
+
+                                           <!----<th scope="col">Email Address</th>
+                                            <th scope="col">Role</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Action</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody *ngFor ="let facture of factures">
+                                      <tr>
+                                        <td></td>
+                                        <td></td>
+
+
+
+
+
+<td>
+<div class="action_btns d-flex">
+
+  <a class="action_btn mr_10" [routerLink]="['/updateFacture',facture.facture_id]"> <i class="far fa-edit"></i> </a>
+  <a class="action_btn mr_10" (click)="supprimerFacture(facture)"> <i class="fas fa-trash"></i> </a>
+</div>
+</td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+<!-- footer part -->
+<app-footer-compoenent></app-footer-compoenent>
+</section>
+<!-- main content part end -->
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+
+<app-chats-component></app-chats-component>
+
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/accordion.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:00 GMT -->
+</html>

@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/accordion.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body class="crm_body_bg">
+
+
+ <!-- sidebar  -->
+
+ <nav class="sidebar dark_sidebar" >
+  <div class="logo d-flex justify-content-between">
+      <a class="large_logo" href="index-2.html"><img src="assets/img/logo.png" alt=""></a>
+      <a class="small_logo" href="index-2.html"><img src="assets/img/mini_logo.png" alt=""></a>
+      <div class="sidebar_close_icon d-lg-none">
+          <i class="ti-close"></i>
+      </div>
+  </div>
+  <ul id="sidebar_menu">
+
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+            <img src="assets/img/menu-icon/21.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Dashboard</span>
+        </div>
+      </a>
+     <ul>
+       <li><a routerLink="/dashboard">Consulter</a></li>
+        <!--  <li><a routerLink="/ajustement">Ajustement</a></li>
+        <li><a routerLink="/realisation">Réalisation</a></li> -->
+      </ul>
+    </li>
+
+
+      <li class="">
+          <a   class="has-arrow" href="#" aria-expanded="false">
+            <div class="nav_icon_small">
+                  <img src="assets/img/menu-icon/dashboard.svg" alt="">
+              </div>
+          <div class="nav_title">
+              <span>Projets</span>
+          </div>
+          </a>
+          <ul>
+
+            <li><a routerLink="/projets">Lister</a></li>
+          </ul>
+      </li>
+
+
+
+
+  <li class="">
+    <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+          <img src="assets/img/menu-icon/18.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Gestion ressources</span>
+        </div>
+    </a>
+  <ul>
+       <li><a routerLink="/ressources">Gérer</a></li>
+        <!--  <li><a href="#">Plannification de travail Financier</a></li>
+        <li><a href="#">Factures</a></li> -->
+
+    </ul>
+  </li>
+
+
+    </ul>
+</nav>
+<!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+      <!-- menu  -->
+      <app-menu-compoenent></app-menu-compoenent>
+  <!--/ menu  -->
+    <div class="main_content_iner ">
+        <div class="container-fluid p-0 sm_padding_15px">
+            <div class="row justify-content-center">
+
+               <!--  <div class="col-lg-6">
+                    <div class="card_box box_shadow position-relative mb_30">
+                        <div class="white_box_tittle ">
+                            <div class="main-title2 ">
+                                <h4 class="mb-2 nowrap">Mon Profile</h4>
+                                <div class="QA_table mb_30">
+
+                                  <table class="table lms_table_active ">
+                                      <thead>
+                                          <tr>
+
+                                              <th scope="col">ID profil</th>
+
+                                             <th scope="col">Nom profil</th>
+
+
+                                          </tr>
+                                      </thead>
+                                      <tbody *ngFor ="let profil of profils" >
+                                        <tr *ngIf="userConnect.profil.idProfil == profil.idProfil">
+                                          <td>{{profil.idProfil}}</td>
+                                          <td>{{profil.nomProfil}}</td>
+                                          <td> </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6"> -->
+                   <!--  <div class="card_box box_shadow position-relative mb_30">
+                        <div class="white_box_tittle ">
+                            <div class="main-title2 ">
+                                <h4 class="mb-2 nowrap">Mon compte</h4>
+                                <div class="QA_table mb_30">
+
+                                  <table class="table lms_table_active ">
+                                      <thead>
+                                          <tr>
+
+                                              <th scope="col">ID utilisateur</th>
+
+                                             <th scope="col">Nom </th>
+                                             <th scope="col">Prénom </th>
+
+                                          </tr>
+                                      </thead>
+                                      <tbody *ngFor ="let user of users"  >
+                                        <tr *ngIf="userConnect.nomUtilisateur == user.nomUtilisateur">
+                                          <td>{{user.utilisateur_id}}</td>
+                                          <td>{{user.nom}}</td>
+
+                                          <td> {{user.prenom}}</td>
+
+
+
+
+                                          </tr>
+
+                                      </tbody >
+                                  </table>
+                              </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div> -->
+              <!--   <div class="col-lg-6">
+                  <div class="card_box box_shadow position-relative mb_30">
+                      <div class="white_box_tittle ">
+                          <div class="main-title2 ">
+                              <h4 class="mb-2 nowrap">Liste des mes projets</h4>
+
+                              <div class="QA_table mb_30">
+
+                                <table class="table lms_table_active ">
+                                    <thead>
+                                        <tr>
+
+                                            <th scope="col">ID </th>
+
+                                           <th scope="col">Intitulé </th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody  *ngFor ="let projet of projets" >
+                                      <tr *ngIf="userConnect.projets[0].projet_id == projet.projet_id">
+                                        <td>{{projet.projet_id}}</td>
+                                        <td>{{projet.intitule}}</td>
+
+                                        <td> </td>
+
+
+
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                          </div>
+                      </div>
+
+                  </div>
+              </div> -->
+                <div class="main_content_iner overly_inner ">
+                    <div class="card_box box_shadow position-relative mb_30">
+                        <div class="white_box_tittle ">
+                            <div class="main-title2 ">
+                                <h2 class="mb-2 nowrap">Gestion ressources</h2>
+
+
+
+
+
+                                <!-- <div class="col-lg-6">
+                                  <button type="button" class="btn btn-outline-secondary rounded-pill mb-3" routerLink="/add-gr" >
+                                    <i class="ti-plus"></i> Affecter</button>
+                              </div> -->
+
+
+                                <div class="QA_table mb_30">
+                                  <!-- table-responsive -->
+                                  <table class="table lms_table_active ">
+                                      <thead>
+                                          <tr>
+
+                                            <th scope="col">Structure</th>
+                                            <th scope="col">Nom </th>
+
+                                              <th scope="col"> Prénom </th>
+
+                                             <th scope="col">Profil</th>
+
+                                             <th scope="col">Projets</th>
+                                             <th>
+                                              <button type="button" class="btn btn-outline-success rounded-pill mb-3" routerLink="/add-gr" >
+                                                <i class="ti-plus"></i> Affecter</button>
+                                             </th>
+                                          </tr>
+                                      </thead>
+                                      <tbody *ngFor ="let user of users" >
+                                        <tr>
+                                          <td>{{user.structure}}</td>
+                                          <td>{{user.nom}}</td>
+                                          <td>{{user.prenom}}</td>
+
+                                          <td>{{user.profil?user.profil.nomProfil:""}}</td>
+
+
+
+                                       <td>
+                                      <ul *ngFor="let projet of user.projets">
+<ol>{{projet.intitule}}</ol>
+                                          </ul> </td>
+
+                                          <td>
+                                            <div class="action_btns d-flex">
+                                              <button type="button" class="btn btn-outline-danger rounded-pill mb-3"> <i class="far fa-edit"></i> Modifier</button>
+                                            <!--   <button type="button"class="btn btn-info mb-3">Modifier</button> -->
+                                               <!-- <a class="action_btn mr_10" routerLink="/update-gr"> <i class="far fa-edit"></i> </a> -->
+
+                                               <button type="button" class="btn btn-outline-primary rounded-pill mb-3"(click)="supprimerUser(user)" ><i class="fas fa-trash"></i> Supprimer</button>
+                                              <!--  <button type="button" class="btn btn-secondary mb-3" (click)="supprimerUser(user)">Supprimer</button> -->
+<!--
+    <a class="action_btn mr_10" (click)="supprimerUser(user)"> <i class="fas fa-trash"></i> </a>
+ -->                                           </div>
+                                         </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+<!-- footer part -->
+<app-footer-compoenent></app-footer-compoenent>
+</section>
+<!-- main content part end -->
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+<app-chats-component></app-chats-component>
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/accordion.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:47:00 GMT -->
+</html>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/add_new_user.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:46:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body class="crm_body_bg">
+
+
+
+<!-- main content part here -->
+
+ <!-- sidebar  -->
+ <nav class="sidebar">
+  <div class="logo d-flex justify-content-between">
+      <a class="large_logo" href="index-2.html"><img src="assets/img/logo.jpg" alt=""></a>
+      <a class="small_logo" href="index-2.html"><img src="assets/img/mini_logo.png" alt=""></a>
+      <div class="sidebar_close_icon d-lg-none">
+          <i class="ti-close"></i>
+      </div>
+  </div>
+  <ul id="sidebar_menu">
+
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+          <img src="assets/img/menu-icon/15.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Suivi financier</span>
+        </div>
+      </a>
+     <ul>
+       <li><a >Consulter</a></li>
+        <!--  <li><a routerLink="/ajustement">Ajustement</a></li>
+        <li><a routerLink="/realisation">Réalisation</a></li> -->
+      </ul>
+    </li>
+
+
+
+    </ul>
+</nav>
+ <!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+        <!-- menu  -->
+        <app-menu-compoenent></app-menu-compoenent>
+    <!--/ menu  -->
+    <div class="main_content_iner overly_inner ">
+        <div class="container-fluid p-0 ">
+            <!-- page title  -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="white_card card_height_100 mb_30">
+                        <div class="white_card_header">
+                            <div class="box_header m-0">
+                                <div class="main-title">
+                                    <h3 class="m-0">Modifier uue facture : </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="white_card_body">
+                            <div class="row">
+                              <div class="col-lg-6">
+                                <div class="common_input mb_15">
+                                    <input type="text" placeholder="Nom" [(ngModel)]= "currentFacture.nom_facture" name="nom" class="form-control">
+                                </div>
+                            </div>
+
+
+
+
+                                <div class="col-12">
+                                  <div class="create_report_btn mt_30">
+                                      <a class="btn_1 radius_btn d-block text-center"   (click)="UpdateFacture()" >Modifier</a>
+                                  </div>
+                              </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer part -->
+<app-footer-compoenent></app-footer-compoenent>
+</section>
+<!-- main content part end -->
+
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+
+<app-chats-component></app-chats-component>
+<!-- footer  -->
+
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/add_new_user.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:46:54 GMT -->
+</html>

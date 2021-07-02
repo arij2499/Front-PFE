@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:45:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body class="crm_body_bg">
+
+
+
+<!-- main content part here -->
+
+ <!-- sidebar  -->
+ <nav class="sidebar dark_sidebar" >
+  <div class="logo d-flex justify-content-between">
+      <a class="large_logo" href="index-2.html"><img src="assets/img/logo.png" alt=""></a>
+      <a class="small_logo" href="index-2.html"><img src="assets/img/mini_logo.png" alt=""></a>
+      <div class="sidebar_close_icon d-lg-none">
+          <i class="ti-close"></i>
+      </div>
+  </div>
+  <ul id="sidebar_menu">
+
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+            <img src="assets/img/menu-icon/21.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Dashboard</span>
+        </div>
+      </a>
+     <ul>
+       <li><a routerLink="/dashboard">Consulter</a></li>
+        <!--  <li><a routerLink="/ajustement">Ajustement</a></li>
+        <li><a routerLink="/realisation">Réalisation</a></li> -->
+      </ul>
+    </li>
+
+
+      <li class="">
+          <a   class="has-arrow" href="#" aria-expanded="false">
+            <div class="nav_icon_small">
+                  <img src="assets/img/menu-icon/dashboard.svg" alt="">
+              </div>
+          <div class="nav_title">
+              <span>Projets</span>
+          </div>
+          </a>
+          <ul>
+
+            <li><a routerLink="/projets">Lister</a></li>
+          </ul>
+      </li>
+
+
+
+
+  <li class="">
+    <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+          <img src="assets/img/menu-icon/18.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Gestion ressources</span>
+        </div>
+    </a>
+  <ul>
+       <li><a routerLink="/ressources">Gérer</a></li>
+        <!--  <li><a href="#">Plannification de travail Financier</a></li>
+        <li><a href="#">Factures</a></li> -->
+
+    </ul>
+  </li>
+
+
+    </ul>
+</nav>
+ <!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+        <!-- menu  -->
+        <app-menu-compoenent></app-menu-compoenent>
+    <!--/ menu  -->
+    <div class="main_content_iner overly_inner ">
+        <div class="container-fluid p-0 ">
+            <!-- page title  -->
+            <div class="row">
+
+            </div>
+            <div class="row ">
+
+                <div class="col-xl-4 ">
+                    <div class="white_card card_height_100 mb_30 user_crm_wrapper">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="single_crm">
+                                    <div class="crm_head d-flex align-items-center justify-content-between" >
+                                        <div class="thumb">
+                                            <img src="assets/img/crm/businessman.svg" alt="">
+                                        </div>
+                                        <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                                    </div>
+                                    <div class="crm_body">
+                                        <h4>{{users.length}}</h4>
+                                        <p>Utilisateurs enregistrés</p>
+                                    </div>
+                                </div>
+                            </div>
+                           <!--  <div class="col-lg-6">
+                                <div class="single_crm ">
+                                    <div class="crm_head crm_bg_1 d-flex align-items-center justify-content-between" >
+                                        <div class="thumb">
+                                            <img src="assets/img/crm/customer.svg" alt="">
+                                        </div>
+                                        <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                                    </div>
+                                    <div class="crm_body">
+                                        <h4>2455</h4>
+                                        <p>User Registrations</p>
+                                    </div>
+                                </div>
+                            </div> -->
+                         <!--    <div class="col-lg-6">
+
+                                <div class="single_crm">
+                                    <div class="crm_head crm_bg_2 d-flex align-items-center justify-content-between" >
+                                        <div class="thumb">
+                                            <img src="assets/img/crm/infographic.svg" alt="">
+                                        </div>
+                                        <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                                    </div>
+                                    <div class="crm_body">
+                                        <h4>2455</h4>
+                                        <p>User Registrations</p>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="col-lg-6">
+                                <div class="single_crm">
+                                    <div class="crm_head crm_bg_3 d-flex align-items-center justify-content-between" >
+                                        <div class="thumb">
+                                            <img src="assets/img/crm/sqr.svg" alt="">
+                                        </div>
+                                        <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                                    </div>
+                                    <div class="crm_body">
+                                        <h4>{{projets.length}}</h4>
+                                        <p>Projets</p>
+                                    </div>
+                                </div>
+                            </div>
+                         <!--    <div class="col-lg-6">
+                              <div class="single_crm ">
+                                  <div class="crm_head crm_bg_1 d-flex align-items-center justify-content-between" >
+                                      <div class="thumb">
+                                          <img src="assets/img/crm/customer.svg" alt="">
+                                      </div>
+                                      <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                                  </div>
+                                  <div class="crm_body">
+                                      <h4>0</h4>
+                                      <p>Projets en Siliana</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="single_crm ">
+                                <div class="crm_head crm_bg_1 d-flex align-items-center justify-content-between" >
+                                    <div class="thumb">
+                                        <img src="assets/img/crm/customer.svg" alt="">
+                                    </div>
+                                    <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                                </div>
+                                <div class="crm_body">
+                                    <h4>0</h4>
+                                    <p>Projets en Sfax</p>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col-lg-6">
+                            <div class="single_crm ">
+                                <div class="crm_head crm_bg_1 d-flex align-items-center justify-content-between" >
+                                    <div class="thumb">
+                                        <img src="assets/img/crm/customer.svg" alt="">
+                                    </div>
+                                    <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                                </div>
+                                <div class="crm_body">
+                                    <h4>0</h4>
+                                    <p>Projets en Tunis</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-lg-6">
+                          <div class="single_crm">
+                              <div class="crm_head crm_bg_3 d-flex align-items-center justify-content-between" >
+                                  <div class="thumb">
+                                      <img src="assets/img/crm/sqr.svg" alt="">
+                                  </div>
+                                  <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                              </div>
+                              <div class="crm_body">
+                                  <h4>1</h4>
+                                  <p>Projets en cours</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="single_crm">
+                            <div class="crm_head crm_bg_3 d-flex align-items-center justify-content-between" >
+                                <div class="thumb">
+                                    <img src="assets/img/crm/sqr.svg" alt="">
+                                </div>
+                                <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                            </div>
+                            <div class="crm_body">
+                                <h4>0</h4>
+                                <p>Projets reportés</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="single_crm">
+                          <div class="crm_head crm_bg_3 d-flex align-items-center justify-content-between" >
+                              <div class="thumb">
+                                  <img src="assets/img/crm/sqr.svg" alt="">
+                              </div>
+                              <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                          </div>
+                          <div class="crm_body">
+                              <h4>0</h4>
+                              <p>Projets colturés</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="single_crm">
+                        <div class="crm_head crm_bg_3 d-flex align-items-center justify-content-between" >
+                            <div class="thumb">
+                                <img src="assets/img/crm/sqr.svg" alt="">
+                            </div>
+                            <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                        </div>
+                        <div class="crm_body">
+                            <h4>0</h4>
+                            <p>Projets archivés</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="single_crm">
+                      <div class="crm_head crm_bg_3 d-flex align-items-center justify-content-between" >
+                          <div class="thumb">
+                              <img src="assets/img/crm/sqr.svg" alt="">
+                          </div>
+                          <i class="fas fa-ellipsis-h f_s_11 white_text"></i>
+                      </div>
+                      <div class="crm_body">
+                          <h4>0</h4>
+                          <p>Projets n'ont pas commencé</p>
+                      </div>
+                  </div>
+              </div>
+                        </div>
+
+                    </div>
+                </div>
+               <div class="col-lg-4">
+                  <div class="white_card card_height_100 mb_20 ">
+                      <div class="white_card_header">
+                          <div class="box_header m-0">
+                              <div class="main-title">
+                                  <h3 class="m-0">Liste des projets</h3>
+                              </div>
+                              <div class="header_more_tool">
+                                  <div class="dropdown">
+                                      <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+                                        <i class="ti-more-alt"></i>
+                                      </span>
+                                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
+                                        <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
+                                        <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
+                                        <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
+                                        <a class="dropdown-item" href="#"> <i class="fa fa-download"></i> Download</a>
+                                      </div>
+                                    </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="white_card_body QA_section">
+                          <div class="QA_table ">
+                              <!-- table-responsive -->
+                              <table class="table lms_table_active2 p-0">
+                                  <thead>
+                                      <tr>
+                                          <th scope="col">Intitulé projet</th>
+                                          <th scope="col">Stade</th>
+                                          <th scope="col">Localisation</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody *ngFor ="let projet of projets" >
+
+                                    <tr>
+
+                                      <td>
+                                        {{projet.intitule}}
+                                      </td>
+                                      <td>
+                                        {{projet.stade}}
+                                      </td>
+                                      <td>
+                                        {{projet.localisation}}
+                                      </td>
+                                          <td>
+                                              <div class="action_btns d-flex">
+
+                                                  <a class="action_btn mr_10" (click)="supprimerProjet(projet)"> <i class="fas fa-trash"></i> </a>
+                                              </div>
+                                          </td>
+                                          </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+                <div class="col-xl-4">
+                    <div class="white_card card_height_100 mb_30">
+                        <div class="white_card_header">
+                            <div class="box_header m-0">
+                                <div class="main-title">
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="white_card_body">
+                            <div id="chart-currently"></div>
+                            <div class="monthly_plan_wraper">
+                                <div class="single_plan d-flex align-items-center justify-content-between">
+                                    <div class="plan_left d-flex align-items-center">
+                                        <div class="thumb">
+                                            <img src="assets/img/rs.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h5><a routerLink="/ressources">Gérer ressources</a></h5>
+                                            <span>Affecter projet et profil à un utilisateur </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_plan d-flex align-items-center justify-content-between">
+                                    <div class="plan_left d-flex align-items-center">
+                                        <div class="thumb">
+                                            <img src="assets/img/projet.png" alt="">
+                                        </div>
+                                        <div>
+                                            <h5> <a routerLink="/projets"> Gérer des projets</a></h5>
+                                            <span>Ajouter, modifier et supprimer des projets</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+<app-footer-compoenent></app-footer-compoenent>
+</section>
+<!-- main content part end -->
+
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+<app-chats-component></app-chats-component>
+
+
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:46:32 GMT -->
+</html>
+

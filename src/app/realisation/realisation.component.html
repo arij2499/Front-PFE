@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/user_list.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:46:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<body class="crm_body_bg">
+
+
+
+<!-- main content part here -->
+
+ <!-- sidebar  -->
+ <nav class="sidebar">
+    <div class="logo d-flex justify-content-between">
+        <a class="large_logo" href="index-2.html"><img src="assets/img/logo.jpg" alt=""></a>
+        <a class="small_logo" href="index-2.html"><img src="assets/img/mini_logo.png" alt=""></a>
+        <div class="sidebar_close_icon d-lg-none">
+            <i class="ti-close"></i>
+        </div>
+    </div>
+    <ul id="sidebar_menu">
+
+      <!--   <li class="">
+            <a   class="has-arrow" href="#" aria-expanded="false">
+              <div class="nav_icon_small">
+                    <img src="assets/img/menu-icon/dashboard.svg" alt="">
+                </div>
+            <div class="nav_title">
+                <span>Projets</span>
+            </div>
+            </a>
+            <ul>
+              <li><a routerLink="/add-projet">Ajouter</a></li>
+              <li><a routerLink="/projets">Lister</a></li>
+            </ul>
+        </li> -->
+
+        <li class="">
+            <a   class="has-arrow" href="#" aria-expanded="false">
+              <div class="nav_icon_small">
+                <img src="assets/img/menu-icon/5.svg" alt="">
+            </div>
+            <div class="nav_title">
+                <span>Utilisateurs</span>
+            </div>
+            </a>
+            <ul>
+              <li><a href="#">Lister</a></li>
+              <li><a href="add-user">Ajouter</a></li>
+            </ul>
+        </li>
+        <li class="">
+          <a   class="has-arrow" href="#" aria-expanded="false">
+            <div class="nav_icon_small">
+                  <img src="assets/img/menu-icon/dashboard.svg" alt="">
+              </div>
+          <div class="nav_title">
+              <span>Profils</span>
+          </div>
+          </a>
+          <ul>
+            <li><a routerLink="/add-profil">Ajouter</a></li>
+            <li><a routerLink="/profils">Lister</a></li>
+          </ul>
+      </li>
+      <li class="">
+        <a   class="has-arrow" href="#" aria-expanded="false">
+          <div class="nav_icon_small">
+                <img src="assets/img/menu-icon/dashboard.svg" alt="">
+            </div>
+        <div class="nav_title">
+            <span>Projets</span>
+        </div>
+        </a>
+        <ul>
+
+          <li><a routerLink="/projets">Lister</a></li>
+            <li><a routerLink="/add-projet">Ajouter</a></li>
+        </ul>
+    </li>
+
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+            <img src="assets/img/menu-icon/21.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Suivi Physique</span>
+        </div>
+      </a>
+     <ul>
+        <li><a href="#">Plannification</a></li>
+        <li><a routerLink="/ajustement">Ajustement</a></li>
+        <li><a href="#">Réalisation</a></li>
+      </ul>
+    </li>
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+          <div class="nav_icon_small">
+              <img src="assets/img/menu-icon/15.svg" alt="">
+          </div>
+          <div class="nav_title">
+              <span>Suivi Financier</span>
+          </div>
+      </a>
+    <ul>
+          <li><a href="#">Plannification Initial </a></li>
+          <li><a href="#">Plannification de travail </a></li>
+          <li><a href="#">Factures</a></li>
+
+      </ul>
+    </li>
+
+    <li class="">
+      <a   class="has-arrow" href="#" aria-expanded="false">
+        <div class="nav_icon_small">
+            <img src="assets/img/menu-icon/20.svg" alt="">
+        </div>
+        <div class="nav_title">
+            <span>Suivi marchés </span>
+        </div>
+      </a>
+    <ul>
+        <li><a href="#">Plan de passation Marché</a></li>
+        <li><a href="#">Appel d'offre</a></li>
+        <li><a href="#">Marchés</a></li>
+
+      </ul>
+    </li>
+
+
+      </ul>
+</nav>
+ <!--/ sidebar  -->
+
+
+<section class="main_content dashboard_part large_header_bg">
+        <!-- menu  -->
+        <app-menu-compoenent></app-menu-compoenent>
+    <!--/ menu  -->
+    <div class="main_content_iner overly_inner ">
+        <div class="container-fluid p-0 ">
+            <!-- page title  -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page_title_box d-flex flex-wrap align-items-center justify-content-between">
+                        <div class="page_title_left d-flex align-items-center">
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="white_card card_height_100 mb_30 pt-4">
+                        <div class="white_card_body">
+                            <div class="QA_section">
+                                <div class="white_box_tittle list_header">
+
+                                  <h4> La phase de réalisation physique  </h4>
+                                   <!-- <div class="box_right d-flex lms_block">
+                                         <div class="serach_field_2">
+                                            <div class="search_inner">
+                                                <form Active="#">
+                                                    <div class="search_field">
+                                                        <input type="text" placeholder="Rechercher contenu ici...">
+                                                    </div>
+                                                    <button type="submit"> <i class="ti-Rechercher"></i> </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="add_button ml-10">
+                                            <a href="#" data-toggle="modal" data-target="#addcategory" class="btn_1">Rechercher</a>
+                                        </div>
+                                    </div> -->
+                                </div>
+
+                                <div class="QA_table mb_30">
+                                    <!-- table-responsive -->
+                                    <table class="table lms_table_active ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Réference Projet</th>
+                                                <th scope="col">Nom</th>
+
+                                               <!----<th scope="col">Email Address</th>
+                                                <th scope="col">Role</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Action</th> -->
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+
+                                            <td></td>
+
+                                            <td> </td>
+<td></td>
+<td></td>
+<td></td>
+
+<td>
+  <div class="action_btns d-flex">
+    <a class="action_btn mr_10"> <i class="fad   ti-bar-chart-alt "></i> </a>
+     <a class="action_btn mr_10"> <i class="far fa-edit"></i> </a>
+     <a class="action_btn mr_10"> <i class="fas fa-trash"></i> </a>
+
+    </div>
+</td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer part -->
+<app-footer-compoenent></app-footer-compoenent>
+</section>
+<!-- main content part end -->
+
+<!-- ### CHAT_MESSAGE_BOX   ### -->
+<app-chats-component></app-chats-component>
+
+</body>
+
+<!-- Mirrored from demo.dashboardpack.com/user-management-html/user_list.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Apr 2021 11:46:54 GMT -->
+</html>
+
